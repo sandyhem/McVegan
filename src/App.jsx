@@ -8,6 +8,8 @@ import RegisterUser from './Pages/RegisterUser'
 import MyCart from './Pages/MyCart'
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css"; // Import the styles
+import Contact from './Pages/Contact'
+import About from './Pages/About'
 export default function App() {
   return (
    <>
@@ -18,6 +20,8 @@ export default function App() {
           <Route path='/products' element={<Products/>}></Route>
           <Route path='/orders' element={<Orders/>}></Route>
           <Route path='/login-user' element={<LoginUser/>}></Route>
+          <Route path='/contact' element={<Contact/>}></Route>
+          <Route path='/about' element={<About/>}></Route>
           <Route path='/register-user' element={<RegisterUser/>}></Route>
           <Route path='/cart' element={<MyCart/>}></Route>
       </Routes>

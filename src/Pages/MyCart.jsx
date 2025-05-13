@@ -111,7 +111,7 @@ export default function MyCart() {
 
             <div className="mt-6">
             {cart.length === 0 ? (
-                <p className="text-center text-lg text-gray-500">
+                <p className="text-center text-lg text-slate-100">
                 Your cart is empty.
                 </p>
             ) : (

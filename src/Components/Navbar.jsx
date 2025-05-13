@@ -10,7 +10,7 @@ export default function () {
                   {/* Left Side: Logo + Dropdown + Nav */}
                   <div className="flex items-center gap-6">
                     <img src={logo} alt="logo" className="h-10" />
-                    <select
+                    {/* <select
                       name="menu"
                       className="bg-green-600 text-white px-3 py-2 rounded-md border border-white focus:outline-none focus:ring-2 focus:ring-white"
                     >
@@ -18,10 +18,10 @@ export default function () {
                       <option value="lunch">Lunch</option>
                       <option value="desserts">Desserts</option>
                       <option value="dinner">Dinner</option>
-                    </select>
+                    </select> */}
                     <ul className="flex items-center gap-6 ml-4">
                       <li className="cursor-pointer hover:text-green-500 font-medium">
-                        Ingredients
+                        Interesting Ingredients
                       </li>
                       <li className="cursor-pointer hover:text-green-500 font-medium">
                         Exclusive Deals
@@ -30,10 +30,10 @@ export default function () {
                   </div>
                   <div className="flex items-center gap-6">
                   <ul className="flex items-center gap-6 ml-4">
-                      <li className="cursor-pointer hover:text-green-500 font-medium">
+                      <li onClick={()=>{navigate("/about")}} className="cursor-pointer hover:text-green-500 font-medium">
                         About
                       </li>
-                      <li className="cursor-pointer hover:text-green-500 font-medium">
+                      <li onClick={()=>{navigate("/contact")}} className="cursor-pointer hover:text-green-500 font-medium">
                         Contact
                       </li>
                     </ul>
@@ -43,6 +43,7 @@ export default function () {
                     <button onClick={()=>{navigate("/register-user")}} className="cursor-pointer hover:text-green-500 bg-green-600 text-white px-3 py-2 rounded-md border border-white focus:outline-none focus:ring-2 focus:ring-white">
                       Sign Up
                     </button>
+                    
                   </div>
                 </nav>
               </div>
